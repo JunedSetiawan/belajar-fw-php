@@ -14,11 +14,37 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // \App\Models\Mahasiswa::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        \App\Models\Mahasiswa::create([
+            'id' => 1,
+            'nama' => 'Juned',
+            'nrp' => 51721875,
+            'prodi' => 'Teknik Informatika'
+        ]);
+        \App\Models\Mahasiswa::create([
+            'id' => 2,
+            'nama' => 'Dani',
+            'nrp' => 41789591,
+            'prodi' => 'Teknik Informatika'
+        ]);
+        \App\Models\Mahasiswa::create([
+            'id' => 3,
+            'nama' => 'Jefa',
+            'nrp' => 33219853,
+            'prodi' => 'Sistem Informasi'
+        ]);
+        \App\Models\Mahasiswa::create([
+            'id' => 4,
+            'nama' => 'Udin',
+            'nrp' => 12948219,
+            'prodi' => 'Teknik Telekomunikasi'
+        ]);
+        \App\Models\Mahasiswa::create([
+            'id' => 5,
+            'nama' => 'Reza',
+            'nrp' => 24139842,
+            'prodi' => 'Ilmu Kimia'
+        ]);
     }
 }
